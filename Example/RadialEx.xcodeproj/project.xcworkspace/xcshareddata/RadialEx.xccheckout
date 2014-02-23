@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DEFC8D6E-D3BB-428D-936F-0B4CBC903793</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RadialEx</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CA17183F-E9AA-416E-9B33-3FD99EAA2CA0</key>
+		<string>ssh://github.com/ccirclaeys/CCRadialMenu.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Example/RadialEx.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CA17183F-E9AA-416E-9B33-3FD99EAA2CA0</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/ccirclaeys/CCRadialMenu.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CA17183F-E9AA-416E-9B33-3FD99EAA2CA0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA17183F-E9AA-416E-9B33-3FD99EAA2CA0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CCRadialMenu</string>
+		</dict>
+	</array>
+</dict>
+</plist>
