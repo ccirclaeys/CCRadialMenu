@@ -145,21 +145,21 @@ const float kDegreeToRadians = M_PI / 180;
 {
     if (angle == 0 || angle == 360)
     {
-        return (self.center.x + (radius + _currentButtonSize.width) > self.superview.frame.size.width);
+        return (self.center.x + (radius + _currentButtonSize.width / 2) > self.superview.frame.size.width);
     }
     else if (angle == 90)
     {
-        return (self.center.y + (radius + _currentButtonSize.height) > self.superview.frame.size.height);
+        return (self.center.y + (radius + _currentButtonSize.height / 2) > self.superview.frame.size.height);
 
     }
     else if (angle == 180)
     {
-        return (self.center.x - (radius + _currentButtonSize.width) < self.superview.frame.origin.x);
+        return (self.center.x - (radius + _currentButtonSize.width / 2) < self.superview.frame.origin.x);
 
     }
     else if (angle == 270)
     {
-        return (self.center.y - (radius + _currentButtonSize.height) < self.superview.frame.origin.y);
+        return (self.center.y - (radius + _currentButtonSize.height / 2) < self.superview.frame.origin.y);
     }
 
     
@@ -296,7 +296,8 @@ const float kDegreeToRadians = M_PI / 180;
         [self isCollisionForRadius:radius withAngle:endAngle]))
     {
         [self.delegate radialMenuView:self didFailToDisplayForError:kErrorSizeMax];
-        return;
+        if (!_shouldDisplayOnError)
+            return;
     }
     
     [self displayWithStart:startAngle maxAngle:maxAngle forCenter:_anchorPoint radius:radius];

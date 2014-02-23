@@ -56,6 +56,7 @@ typedef enum
 @property (nonatomic, strong) UIView *backgroundView;
 @property (nonatomic, assign) CCRadialAnimation animation;
 @property (nonatomic, assign) CGFloat offset;
+@property (nonatomic, assign) BOOL shouldDisplayOnError;
 
 @property (nonatomic, readonly) CGFloat currentRadius;
 

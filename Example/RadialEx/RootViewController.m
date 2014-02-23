@@ -41,6 +41,7 @@
     _radialMenuView.delegate = self;
     _radialMenuView.hidden = YES;
     _radialMenuView.offset = 20;
+    _radialMenuView.shouldDisplayOnError = YES;
     
     [self.view addSubview:_radialMenuView];
 }
@@ -73,7 +74,7 @@
     [self setupRadialMenu];
     [self setupRadialButtons];
     
-//    UIView *back = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 100, 100)];
+//    UIView *back = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
 //    back.backgroundColor = [UIColor redColor];
 //    
 //    _radialMenuView.backgroundView = back;
