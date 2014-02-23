@@ -19,8 +19,8 @@
 		A8121E5B18988FE7007132C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8121E4318988FE7007132C5 /* UIKit.framework */; };
 		A8121E6318988FE7007132C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8121E6118988FE7007132C5 /* InfoPlist.strings */; };
 		A8121E6518988FE7007132C5 /* RadialExTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8121E6418988FE7007132C5 /* RadialExTests.m */; };
-		A8121E7018989005007132C5 /* CCRadialMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8121E6F18989005007132C5 /* CCRadialMenuView.m */; };
 		A8121E7318989853007132C5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8121E7218989853007132C5 /* RootViewController.m */; };
+		A8175E2818BABA9F00311C56 /* CCRadialMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8175E2718BABA9F00311C56 /* CCRadialMenuView.m */; };
 		A8405BA0189EB6CE0003161E /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8405B9F189EB6CE0003161E /* CoordinatingController.m */; };
 		A8405BA9189EC8B30003161E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8405BA8189EC8B30003161E /* ViewController.m */; };
 		A8CC4F07189ED31200B51441 /* CCRadialButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CC4F06189ED31200B51441 /* CCRadialButtonView.m */; };
@@ -53,10 +53,10 @@
 		A8121E6018988FE7007132C5 /* RadialExTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadialExTests-Info.plist"; sourceTree = "<group>"; };
 		A8121E6218988FE7007132C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A8121E6418988FE7007132C5 /* RadialExTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadialExTests.m; sourceTree = "<group>"; };
-		A8121E6E18989005007132C5 /* CCRadialMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRadialMenuView.h; sourceTree = "<group>"; };
-		A8121E6F18989005007132C5 /* CCRadialMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRadialMenuView.m; sourceTree = "<group>"; };
 		A8121E7118989853007132C5 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		A8121E7218989853007132C5 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A8175E2618BABA9F00311C56 /* CCRadialMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRadialMenuView.h; path = ../../CCRadialMenuView.h; sourceTree = "<group>"; };
+		A8175E2718BABA9F00311C56 /* CCRadialMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCRadialMenuView.m; path = ../../CCRadialMenuView.m; sourceTree = "<group>"; };
 		A8405B9E189EB6CE0003161E /* CoordinatingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
 		A8405B9F189EB6CE0003161E /* CoordinatingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
 		A8405BA7189EC8B30003161E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -185,8 +185,8 @@
 		A8405BAC189ED1340003161E /* CCRadialMenu */ = {
 			isa = PBXGroup;
 			children = (
-				A8121E6E18989005007132C5 /* CCRadialMenuView.h */,
-				A8121E6F18989005007132C5 /* CCRadialMenuView.m */,
+				A8175E2618BABA9F00311C56 /* CCRadialMenuView.h */,
+				A8175E2718BABA9F00311C56 /* CCRadialMenuView.m */,
 				A8CC4F05189ED31200B51441 /* CCRadialButtonView.h */,
 				A8CC4F06189ED31200B51441 /* CCRadialButtonView.m */,
 			);
@@ -290,7 +290,7 @@
 			files = (
 				A8121E5018988FE7007132C5 /* AppDelegate.m in Sources */,
 				A8405BA0189EB6CE0003161E /* CoordinatingController.m in Sources */,
-				A8121E7018989005007132C5 /* CCRadialMenuView.m in Sources */,
+				A8175E2818BABA9F00311C56 /* CCRadialMenuView.m in Sources */,
 				A8121E7318989853007132C5 /* RootViewController.m in Sources */,
 				A8CC4F07189ED31200B51441 /* CCRadialButtonView.m in Sources */,
 				A8405BA9189EC8B30003161E /* ViewController.m in Sources */,
