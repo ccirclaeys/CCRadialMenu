@@ -41,7 +41,7 @@
     _radialMenuView.delegate = self;
     _radialMenuView.hidden = YES;
     _radialMenuView.offset = 20;
-    _radialMenuView.shouldDisplayOnError = YES;
+    _radialMenuView.shouldDisplayOnRadiusCollision = YES;
     
     [self.view addSubview:_radialMenuView];
 }
@@ -125,7 +125,7 @@
     [[CoordinatingController sharedInstance] requestViewChangeByObject:[_buttonsArray objectAtIndex:index]];
 }
 
-- (void)radialMenuView:(CCRadialMenuView *)radialMenuView didFailToDisplayForError:(CCRadialErrorType)error
+- (void)radialMenuView:(CCRadialMenuView *)radialMenuView didFailToDisplayForError:(CCRadialError)error
 {
     NSLog(@"didFailToDisplayForError");
 }

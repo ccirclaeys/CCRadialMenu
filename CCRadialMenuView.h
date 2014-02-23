@@ -11,16 +11,9 @@
 
 typedef enum
 {
-    TopAngle = 270,
-    RightAngle = 0,
-    BottomAngle = 90,
-    LeftAngle = 180
-} DirectionAngle;
-
-typedef enum
-{
-    kErrorSizeMax
-} CCRadialErrorType;
+    CCRadialErrorRadiusCollision,
+    CCRadialErrorSizeMax
+} CCRadialError;
 
 typedef enum
 {
@@ -43,7 +36,7 @@ typedef enum
 - (void)radialMenuView:(CCRadialMenuView *)radialMenuView didSelectViewAtIndex:(NSInteger)index;
 
 @optional
-- (void)radialMenuView:(CCRadialMenuView *)radialMenuView didFailToDisplayForError:(CCRadialErrorType)error;
+- (void)radialMenuView:(CCRadialMenuView *)radialMenuView didFailToDisplayForError:(CCRadialError)error;
 - (void)radialMenuView:(CCRadialMenuView *)radialMenuView didChangeRadius:(CGFloat)radius;
 
 @end
@@ -56,7 +49,7 @@ typedef enum
 @property (nonatomic, strong) UIView *backgroundView;
 @property (nonatomic, assign) CCRadialAnimation animation;
 @property (nonatomic, assign) CGFloat offset;
-@property (nonatomic, assign) BOOL shouldDisplayOnError;
+@property (nonatomic, assign) BOOL shouldDisplayOnRadiusCollision;
 
 @property (nonatomic, readonly) CGFloat currentRadius;
 

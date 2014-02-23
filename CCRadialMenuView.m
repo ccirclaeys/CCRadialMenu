@@ -254,7 +254,7 @@ const float kDegreeToRadians = M_PI / 180;
     
     if (maxAngle <= 0)
     {
-        [self.delegate radialMenuView:self didFailToDisplayForError:kErrorSizeMax];
+        [self.delegate radialMenuView:self didFailToDisplayForError:CCRadialErrorSizeMax];
         return;
     }
     
@@ -295,8 +295,8 @@ const float kDegreeToRadians = M_PI / 180;
     if (maxAngle < 360 && ([self isCollisionForRadius:radius withAngle:startAngle] ||
         [self isCollisionForRadius:radius withAngle:endAngle]))
     {
-        [self.delegate radialMenuView:self didFailToDisplayForError:kErrorSizeMax];
-        if (!_shouldDisplayOnError)
+        [self.delegate radialMenuView:self didFailToDisplayForError:CCRadialErrorRadiusCollision];
+        if (!_shouldDisplayOnRadiusCollision)
             return;
     }
     
